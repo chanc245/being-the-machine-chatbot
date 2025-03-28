@@ -12,7 +12,8 @@ document.fonts.ready.then(() => {
         // loadPuzzle.call(this);
       },
       processInput: async function (input) {
-        const prompt = evaluationPrompt(otherInput, input);
+        const prompt = evaluationPrompt_ver2(input, ContexualWritingSprint, ConsAnalysisOverview, AnalysisOverview);
+        // const prompt = evaluationPrompt_ver1(input, AllInterview, ALLConversation);
 
         const aiResponse = await fetchAIResponse(prompt);
 
@@ -22,14 +23,17 @@ document.fonts.ready.then(() => {
       },
     },
     {
-      greetings: `Welcome to AI Chatbot example in jquery.terminal!
+      greetings: `Welcome to the terminal for the Being the Machine Screen Filming event!
 
-See /public/prompt.js to update the prompt you’re using. Otherwise, the AI will answer questions based on the current prompt!
+Here, you’ll interact with the AI from the film, who knows all the information within!
+
+Feel free to ask me anything about the event or the film!
 `,
       prompt: "> ",
       onInit: function () {
         this.push(async function (input) {
-          const prompt = evaluationPrompt(otherInput, input);
+          const prompt = evaluationPrompt_ver2(input, ContexualWritingSprint, ConsAnalysisOverview, AnalysisOverview);
+          // const prompt = evaluationPrompt_ver1(input, AllInterview, ALLConversation);
           const aiResponse = await fetchAIResponse(prompt);
           this.echo(`\n[AI]
   ${aiResponse}

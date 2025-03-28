@@ -1,7 +1,7 @@
 {
-  "name": "chat-ai-terminal-example",
+  "name": "being-the-machine-chatbot",
   "version": "1.0.0",
-  "description": "This is a AI Chatbot that uses jquery.terminal. ",
+  "description": "This is the chatbot example for Being the Machine - Creative Connection project",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,6 @@
   "author": "chanc245",
   "license": "ISC",
   "dependencies": {
-    "@google/generative-ai": "^0.7.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.21.1",

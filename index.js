@@ -1,5 +1,4 @@
 // ---------- GPT API ---------- //
-// npm run gpt
 
 import express from 'express';
 import cors from 'cors';
@@ -64,9 +63,3 @@ async function getGptResultAsString(input) {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
-// ---------- GPT API ---------- //
-// ---------- GPT API ---------- //
-// ---------- GPT API ---------- //
-// ---------- GPT API ---------- //
-// ---------- GPT API ---------- //
