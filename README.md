@@ -1,6 +1,6 @@
-# AI Chatbot example in jquery.terminal 
+# being-the-machine-chatbot
 
-This is a AI Chatbot that uses jquery.terminal. 
+This is an AI chatbot that uses jQuery Terminal and will answer your questions about the research project Being the Machine.
 
 ## Dependencies 
 
@@ -8,5 +8,3 @@ This is a AI Chatbot that uses jquery.terminal.
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
 - [jquery.terminal](https://github.com/jcubic/jquery.terminal)
-# being-the-machine-chatbot
-# being-the-machine-chatbot
