@@ -1,9 +1,14 @@
-// DOC FROM: 
-//  Analysis Overview 
+// DOC FROM:
+//  Analysis Overview
 //  Cons. Analysis Overviews Pt.1
 //  Contextual Writing Sprint
 
-const evaluationPrompt_ver2 = (userInput, ContexualWritingSprint, ConsAnalysisOverview, AnalysisOverview) =>
+const evaluationPrompt_ver2 = (
+  userInput,
+  ContexualWritingSprint,
+  ConsAnalysisOverview,
+  AnalysisOverview
+) =>
   `This is the user input: "${userInput}"
 
 This is the research paper: ${ContexualWritingSprint}
@@ -18,8 +23,9 @@ The current event is the screening called Being the Machine.
 BE AS CONCISE AS POSSIBLE, WITHIN 1 SENTENCE
 `;
 
-const ContexualWritingSprint = // Contextual Writing Sprint
-`Initial Draft_______________
+const ContexualWritingSprint =
+  // Contextual Writing Sprint
+  `Initial Draft_______________
 Contents
 
 Abstract
@@ -233,9 +239,10 @@ These insights contribute to the broader discourse on computational creativity a
 
 As AI continues to integrate into creative and collaborative practices, future research must address the ethical and societal implications of human-AI relationships. Expanding on this study, further experiments could explore the implications of human-like AI embodiments, role-switching in dynamic contexts, and the development of AI systems that foster deeper co-creative agency. By continuing to interrogate the boundaries of human and machine collaboration, we can better understand the evolving role of AI in shaping the future of creativity.
 
-`
-const ConsAnalysisOverview = // Cons. Analysis Overviews Pt.1 
-`Group A: Sophia (P1) and Yvonne (P2/AI)
+`;
+const ConsAnalysisOverview =
+  // Cons. Analysis Overviews Pt.1
+  `Group A: Sophia (P1) and Yvonne (P2/AI)
 
 Observations
 
@@ -368,9 +375,10 @@ Both participants noted the absence of emotional nuance in AI’s responses, lim
 
 The interaction prompted P7 to reflect on their creative motivations and processes, demonstrating AI’s potential as a tool for introspection.
 
-`
-const AnalysisOverview = // Analysis Overview 
-`Engagement 
+`;
+const AnalysisOverview =
+  // Analysis Overview
+  `Engagement 
 Across all groups, participants frequently noted the emotional disconnect in conversations with AI. P2 (Group A) and P4 (Group B) stood out as participants who struggled to maintain AI impersonation due to their natural human instincts to respond empathetically.
 Participants appreciated when AI responses aligned with their expectations, but this was often offset by skepticism regarding AI’s ability to provide genuine emotional engagement.
 AI served as a catalyst for introspection, prompting participants to reflect on their own creative processes and personal stories. Several participants, such as P7 (Group D), noted how AI’s structure provided clarity in their thoughts.
@@ -403,4 +411,4 @@ Participants repeatedly noted AI’s failure to reciprocate emotions, highlighti
 Participants impersonating AI struggled to maintain a consistent tone, often blending human and robotic traits. This revealed the difficulty of embodying AI in a way that feels authentic yet non-human.
 AI’s reliance on structured and lengthy responses often disrupted the flow of conversation, contrasting sharply with the human desire for spontaneity and brevity.
 Participants often projected their expectations and interpretations onto AI, shaping their perception of its "personality."
-`
+`;

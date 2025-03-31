@@ -12,11 +12,15 @@ document.fonts.ready.then(() => {
         // loadPuzzle.call(this);
       },
       processInput: async function (input) {
-        const prompt = evaluationPrompt_ver2(input, ContexualWritingSprint, ConsAnalysisOverview, AnalysisOverview);
+        const prompt = evaluationPrompt_ver2(
+          input,
+          ContexualWritingSprint,
+          ConsAnalysisOverview,
+          AnalysisOverview
+        );
         // const prompt = evaluationPrompt_ver1(input, AllInterview, ALLConversation);
 
-        const aiResponse = await fetchAIResponse(prompt);
-
+        const aiResponse = await fetchAIResponse(prompt, input);
         this.echo(`\n[AI]
   ${aiResponse}
 `);
@@ -32,9 +36,14 @@ Feel free to ask me anything about the event or the film!
       prompt: "> ",
       onInit: function () {
         this.push(async function (input) {
-          const prompt = evaluationPrompt_ver2(input, ContexualWritingSprint, ConsAnalysisOverview, AnalysisOverview);
+          const prompt = evaluationPrompt_ver2(
+            input,
+            ContexualWritingSprint,
+            ConsAnalysisOverview,
+            AnalysisOverview
+          );
           // const prompt = evaluationPrompt_ver1(input, AllInterview, ALLConversation);
-          const aiResponse = await fetchAIResponse(prompt);
+          const aiResponse = await fetchAIResponse(prompt, input);
           this.echo(`\n[AI]
   ${aiResponse}
 `);
@@ -50,7 +59,7 @@ Feel free to ask me anything about the event or the film!
 // ---------- AI ---------- //
 // ---------- AI ---------- //
 
-async function fetchAIResponse(input) {
+async function fetchAIResponse(input, userInput) {
   console.log(`--fetchAIResponse started --input: ${input}`);
 
   try {
@@ -59,7 +68,7 @@ async function fetchAIResponse(input) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ input }),
+      body: JSON.stringify({ input, userInput }),
     });
 
     if (response.ok) {
