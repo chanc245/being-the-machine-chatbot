@@ -27,11 +27,11 @@ document.fonts.ready.then(() => {
       },
     },
     {
-      greetings: `Welcome to the terminal for the Being the Machine Screen Filming event!
+      greetings: `Welcome to the terminal for the Being the Machine film screening!
 
-Here, you’ll interact with the AI from the film, who knows all the information within!
+Here, you’ll interact with the AI featured in the film — it knows everything about what’s inside!
 
-Feel free to ask me anything about the event or the film!
+Feel free to ask anything about the event or the research!
 `,
       prompt: "> ",
       onInit: function () {
