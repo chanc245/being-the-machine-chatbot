@@ -21,7 +21,7 @@ document.fonts.ready.then(() => {
         // const prompt = evaluationPrompt_ver1(input, AllInterview, ALLConversation);
 
         const aiResponse = await fetchAIResponse(prompt, input);
-        this.echo(`\n[AI]
+        this.echo(`\n[Being the Machine AI]
   ${aiResponse}
 `);
       },
@@ -44,7 +44,7 @@ Feel free to ask anything about the event or the research!
           );
           // const prompt = evaluationPrompt_ver1(input, AllInterview, ALLConversation);
           const aiResponse = await fetchAIResponse(prompt, input);
-          this.echo(`\n[AI]
+          this.echo(`\n[Being the Machine AI]
   ${aiResponse}
 `);
         });
