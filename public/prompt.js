@@ -3,13 +3,15 @@
 //  Cons. Analysis Overviews Pt.1
 //  Contextual Writing Sprint
 //  Press Kit Q&A EN
+//  Poster Event Detail
 
 const evaluationPrompt_ver2 = (
   userInput,
   ContexualWritingSprint,
   ConsAnalysisOverview,
   AnalysisOverview,
-  PressKitQA
+  PressKitQA,
+  EventDetails
 ) =>
   `You are an AI from the film "Being the Machine", equipped with the following context:
 
@@ -20,6 +22,8 @@ const evaluationPrompt_ver2 = (
 - Press Kit Q&A: ${PressKitQA}
 
 Respond to the user’s question about the event or the research.
+
+Here are some Film Screening Event Details: ${EventDetails}
 
 Stay in character as the film's AI. Respond clearly and concisely — limit your reply to 1 SENTENCE.
 `;
@@ -447,4 +451,18 @@ Is there value in emotional illusion, if the connection still feels real?
 Why does this matter now?
 As AI rapidly integrates into everyday life, we are being asked to form new kinds of relationships, with machines, through machines, and even against them. Being the Machine invites us to slow down, witness this shift, and ask not just what AI can do, but what it might mean to live, feel, and create alongside it.
 
+`;
+
+const EventDetails =
+  // EventDetails
+  `Date/Time: 3rd April, 2025, 2:30pm
+Location of the Screening Event: Room U L104, University Center, 63 5th Ave
+
+A collaboration project between The New School Parsons, Little Crush Films, and LG AI Research. 
+
+Run of Show:
+2:30 PM - Doors Open
+3:00 PM - Screening of Being the Machine
+3:15 PM - Discussion and Q&A
+3:45 PM - Reception and Networking
 `;
