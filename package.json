@@ -1,7 +1,7 @@
 {
-  "name": "being-the-machine-chatbot",
+  "name": "being-the-machine-ai",
   "version": "1.0.0",
-  "description": "This is the chatbot example for Being the Machine - Creative Connection project",
+  "description": "This is the chatbot for Being the Machine - Creative Connection project",
   "main": "index.js",
   "type": "module",
   "scripts": {
